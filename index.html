@@ -17,16 +17,20 @@
                 color: Red;
                 }
               }
-              
+              @keyframes cc {0% {background-color: lightblue};
+                50% {background-color: Blue};
+                100%{background-color: darkblue}
+              }
               .h11 {
-                animation: spin 3s 0s 5 ;
+                animation: spin 3s 0s 2 ;
               }
               
               body {background-color: Black; font-family: "Lato", sans-serif;}
 
 /* Style the tab */
 div.tab {
-    overflow: hidden;
+ 
+  overflow: hidden;
     border: 2px solid blueviolet;
   background-color: limegreen;
 position:relative;
@@ -48,7 +52,7 @@ div.tab button {
 
 /* Change background color of buttons on hover */
 div.tab button:hover {
-    background-color: Red;
+      animation: cc 2s 0s infinite; 
 }
 
 /* Create an active/current tablink class */
